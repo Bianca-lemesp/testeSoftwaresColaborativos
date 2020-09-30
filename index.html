@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Base Nacional de Consultores de Imóveis</title>
+
+    <style>  
+     
+    html 
+        {background-color:whitesmoke;}   
+           
+    body {overflow-x: hidden;} 
+                
+      main {  
+             width: 1330px; 
+             margin:2px auto -100px; 
+             border:0px solid #ddd; 
+             background-color:#FFF; 
+             font-family:Arial, Helvetica, sans-serif; 
+         }
+        
+    form {
+            margin:-10;
+            padding:60px 15px;
+            width: 0px;
+            height:0px;
+            margin: 0px;
+        }   
+     
+        
+    .pesquisa{
+            width: 1700px;
+            height: 110px;
+            margin: 20px;
+            margin-top: -79px;
+            border: 10px;
+            
+        }
+        
+    #texto{
+            width: 430px;
+            margin-left: 818px;
+            height: 40px;
+            float: left;
+            font-family: helvetica;
+            font-size: 20px;
+        }  
+        
+     .btn {
+            width: 30px;
+            height: 30px;
+            background-color: brown;
+            padding: 5px 8px;
+            cursor:pointer;    
+            
+         }
+        
+    #texto:focus{border: solid 2px; brown;}
+        
+    figure {
+            float:left;
+            margin-left: 20px;
+            padding: 10px;-10px;
+            margin-right: -800px;
+            margin-bottom: 800px; 
+           }  
+        
+    h1 {
+            font-family:helvetica;
+            font-size: 30px;
+            color: white;
+            text-align: end;
+            padding: 10px 50px 80px;
+            background-color:brown;
+        }    
+             
+        
+    h4 {
+            font-family: helvetica;
+            font-size: 20px;
+            font-weight: 1000;
+            text-align: center;
+            color:darkred;
+            left: 30px; 
+            margin-left: 90px;
+            margin-right:90px;
+            margin-top: -20px ;
+            padding: 30px; 5px 2px;
+        }
+        
+    h3{
+            font-family: helvetica;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            color:darkred;
+            background-color: lightgray
+            margin-left: 100px;
+            margin-right:0px;
+            margin-top: -80px ;
+            padding: 40px; 10px 1px;
+            padding-left: 90px;
+            margin-bottom: 60px;      
+        }
+        
+        ul 
+        {margin: 1;padding: 1;}  
+        
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+        
+        li a {
+            text-decoration:none;
+            color:darkred;
+            background-color:white;
+            margin-bottom: 1px;
+            border-style:solid;
+            border-color:lightgray;
+            border-radius: 10px;
+            padding: 8px 7px;  
+            cursor: pointer;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 70vh;
+            display: center;
+        }
+        
+    div.info {
+            float: right;
+            margin-top: -195px;
+            margin-right: 480px;
+          }
+    
+    
+        
+        
+    footer 
+        { clear:both; width:700px; margin:0 auto; font-size:0.75em; text-align:center; background-color:#ECECEC; padding:5px }
+              
+    </style>
+    </head>
+
+<body>
+   
+   <main>
+    <figure>
+    <div id="topo">
+        <img src="img\BNCI.jpeg"; width="230";>
+    </div>
+    </figure>
+
+    <div id="navegacao">
+        <h1></h1>
+    </div>
+       
+     <form class="pesquisa"  method="get">
+        <input type="search" act id="texto"placeholder="digite sua busca aqui">
+        <img src="img\lupa.png" class="btn">
+    </form>  
+  
+    <div class="info">
+       <ul>
+            <li><a href="index.html"><strong>Início</strong></a></li>
+            <li><a href="sobree.html"><strong>Sobre</strong></a></li>
+       </ul>
+    </div>   
+       
+    <h4>VALIDAÇÃO DE CRECI POR ESTADO &#9660;</h4>
+    <h3>Escolha um Estado abaixo para obter informações sobre o CRECI e link para acesso ao site </h3>
+       
+    <ul>
+        <li><a onclick="ac()">AC</a></li>
+        <li><a onclick="al()">AL</a></li>
+        <li><a onclick="am()">AM</a></li>
+        <li><a onclick="ap()">AP</a></li>
+        <li><a onclick="ba()">BA</a></li>
+        <li><a onclick="ce()">CE</a></li>
+        <li><a onclick="df()">DF</a></li>
+        <li><a onclick="es()">ES</a></li>
+        <li><a onclick="go()">GO</a></li>
+        <li><a onclick="ma()">MA</a></li>
+        <li><a onclick="mt()">MT</a></li>
+        <li><a onclick="ms()">MS</a></li>
+        <li><a onclick="mg()">MG</a></li>
+        <li><a onclick="pa()">PA</a></li>
+        <li><a onclick="pb()">PB</a></li>
+        <li><a onclick="pr()">PR</a></li>
+        <li><a onclick="pe()">PE</a></li>
+        <li><a onclick="pi()">PI</a></li>
+        <li><a onclick="rj()">RJ</a></li>
+        <li><a onclick="rn()">RN</a></li>
+        <li><a onclick="rs()">RS</a></li>
+        <li><a onclick="ro()">RO</a></li>
+        <li><a onclick="rr()">RR</a></li>
+        <li><a onclick="sc()">SC</a></li>
+        <li><a onclick="sp()">SP</a></li>
+        <li><a onclick="se()">SE</a></li>
+        <li><a onclick="to()">TO</a></li>  
+    </ul>
+
+    <div class="estados">
+        <iframe></iframe>
+    </div>
+      
+    <footer>
+        <p>contatobnci@gmail.com</p>
+        <p><small>Base Nacional de Corretores de Imóveis &#8634;</small></p>
+        <p><small>2020</small></p>
+    
+    </footer>      
+  </main>  
+  <script type="text/javascript" src="js/estado.js"></script>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+
+</body>
+</html>
